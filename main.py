@@ -22,22 +22,18 @@ async def amistoso(interaction: discord.Interaction):
         title="🔴⚫⚪ AMISTOSO AGORA ??? ⚪⚫🔴",
         description="""
 ━━━━━━━━━━━━━━━━━━━━━
-🔥🔥🔥 **ATENÇÃO TIME TPS!** 🔥🔥🔥
+🔥🔥🔥 **ATENÇÃO TIME TCS!** 🔥🔥🔥
 ━━━━━━━━━━━━━━━━━━━━━
 
 ⚽ **ALGUÉM QUER JOGAR AMISTOSO AGORA ???** ⚽
 
-🏴 **ESTAMOS PROCURANDO JOGO!** 🏴
-
-━━━━━━━━━━━━━━━━━━━━━
+🏴 **Amis agora??!** 🏴
         """,
-        color=0xFF0000  # VERMELHO
+        color=0xFF0000
     )
     embed.add_field(name="📋 SITUAÇÃO ATUAL DO TIME", value=">>> ```\n✅ LINE: 100% OK E PRONTA\n🧤 GK: 100% OK E PRONTO\n⏰ HORÁRIO: AGORA MESMO\n📶 PING: VERDE / BOM\n🎙️ CALL: TODO MUNDO ON\n```", inline=False)
-    embed.add_field(name="🚨 O QUE PRECISAMOS", value=">>> 🔥 **JOGADORES ATIVOS**\n🔥 **FOCO TOTAL**\n🔥 **VONTADE DE GANHAR**\n🔥 **COMUNICAÇÃO NA CALL**", inline=False)
-    embed.add_field(name="👇 FAÇA ISSO AGORA", value="> 1️⃣ **ENTRA NA CALL IMEDIATAMENTE**\n> 2️⃣ **CONFIRMA PRESENÇA NO CHAT**\n> 3️⃣ **AVISA QUE TÁ PRONTO**\n> 4️⃣ **BORA AMASSAR!**", inline=False)
-    embed.add_field(name="━━━━━━━━━━━━━━━━━━━━━", value="⚫⚪🔴 **TPS E-SPORTS - O MAIS TEMIDO** 🔴⚪⚫", inline=False)
-    embed.set_footer(text="🔴⚫ TPS - AMISTOSO - SEM DESCULPA, SÓ JOGO! ⚫🔴")
+    embed.add_field(name="👇 FAÇA ISSO AGORA", value="> 1️⃣ **ENTRA NA CALL IMEDIATAMENTE**\n> 2️⃣ **CONFIRMA PRESENÇA**\n> 3️⃣ **BORA AMASSAR!**", inline=False)
+    embed.set_footer(text="🔴⚫ TCS - AMISTOSO - SEM DESCULPA! ⚫🔴")
     await interaction.followup.send(content="# @everyone @here\n## 🔴⚫⚪ AMISTOSO AGORA ??? ⚪⚫🔴", embed=embed)
 
 # 2 - AMISTOSOHOST - PRETO - COM NICK E LINK
@@ -45,79 +41,64 @@ async def amistoso(interaction: discord.Interaction):
 async def amistosohost(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
-        title="⚫🔴 AMISTOSO NA NOSSA CASA - VENHA PERDER! 🔴⚫",
+        title="⚫🔴 AMISTOSO NA NOSSA CASA - TCS! 🔴⚫",
         description="""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🏠🔥 **AMISTOSO NA NOSSA CASA!** 🔥🏠
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🏴 **QUER JOGAR CONTRA O TPS? ENTÃO VEM!** 🏴
-👑 **O TIME MAIS BRABO DO ROBLOX!** 👑
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏴 **AMISTOSO EM!** 🏴
+👑 **O TIME MAIS BRABO!** 👑
         """,
-        color=0x000000  # PRETO
+        color=0x000000
     )
     embed.add_field(name="👤 NICK DO HOST OFICIAL", value="```\n🌟 Creigh_Tps1 🌟\n```", inline=False)
-    embed.add_field(name="🔗 LINK DO SERVER OFICIAL", value=">>> **COPIA E COLA ESSE LINK:**\n`https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[🔴 CLIQUE AQUI PARA ENTRAR DIRETO 🔴](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
-    embed.add_field(name="📋 INFORMAÇÕES COMPLETAS DA PARTIDA", value=">>> ```\n✅ LINE: COMPLETA E PRONTA\n🧤 GK: TITULAR E PRONTO\n🗺️ MAPA: PADRÃO COMPETITIVO\n⚙️ MODO: 11x11 OFICIAL\n🎙️ CALL: OBRIGATÓRIA NA HORA\n🏆 ESTILO: SÉRIO E COMPETITIVO\n```", inline=False)
-    embed.add_field(name="⚠️ REGRAS DO NOSSO HOST", value="> 🚫 **SEM TOXICIDADE**\n> 🚫 **SEM XINGAMENTO**\n> ✅ **RESPEITO SEMPRE**\n> ✅ **JOGO LIMPO**\n> 🔥 **VENHA PARA JOGAR SÉRIO!**", inline=False)
-    embed.add_field(name="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", value="🔴⚫⚪ **TPS E-SPORTS - O TIME DA MASSA** ⚪⚫🔴", inline=False)
-    embed.set_footer(text="⚫ TPS HOST OFICIAL | Host: Creigh_Tps1 | VERMELHO PRETO BRANCO ⚫")
-    await interaction.followup.send(content="# @everyone @here\n## ⚫🏠 AMISTOSO NA NOSSA CASA! ENTRE AGORA! 🏠⚫", embed=embed)
+    embed.add_field(name="🔗 LINK DO SERVER OFICIAL", value=">>> `https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[🔴 CLIQUE AQUI PARA ENTRAR 🔴](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
+    embed.add_field(name="📋 INFO DA PARTIDA", value=">>> ```\n✅ LINE: COMPLETA\n🧤 GK: PRONTO\n🗺️ MAPA: PADRÃO\n⚙️ MODO: 11x11\n🎙️ CALL: ON\n```", inline=False)
+    embed.set_footer(text="⚫ TCS HOST OFICIAL | Host: Creigh_Tps1 ⚫")
+    await interaction.followup.send(content="# @everyone @here\n## ⚫🏠 AMISTOSO NA NOSSA CASA TCS! 🏠⚫", embed=embed)
 
 # 3 - PENEIRA - BRANCO
 @bot.tree.command(name="peneira", description="Peneira gigante")
 async def peneira(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
-        title="⚪🔴⚫ PENEIRA ABERTA TPS - SUA CHANCE! ⚫🔴⚪",
+        title="⚪🔴⚫ PENEIRA ABERTA TCS - SUA CHANCE! ⚫🔴⚪",
         description="""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🌟🏆 **PENEIRA OFICIAL TPS E-SPORTS ABERTA!** 🏆🌟
+🌟🏆 **PENEIRA OFICIAL TCS E-SPORTS ABERTA!** 🏆🌟
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔥 **JÁ SONHOU EM JOGAR NO TPS?** 🔥
-👑 **AGORA É SUA OPORTUNIDADE DE BRILHAR!** 👑
-⚽ **ESTAMOS RECRUTANDO OS MELHORES!** ⚽
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 **QUER FAZER PARTE DO TCS?** 🔥
+👑 **SUA OPORTUNIDADE!** 👑
         """,
-        color=0xFFFFFF  # BRANCO
+        color=0xFFFFFF
     )
-    embed.add_field(name="👤 NICK DO HOST DA PENEIRA", value="```\n👑 Creigh_Tps1 - DONO DO TPS 👑\n```", inline=False)
-    embed.add_field(name="🔗 LINK OFICIAL DA PENEIRA", value=">>> **ENTRA NESSE LINK AGORA:**\n`https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[⚪ CLIQUE AQUI PARA TENTAR A SORTE ⚪](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
-    embed.add_field(name="📋 REQUISITOS OBRIGATÓRIOS", value=">>> ```\n🗣️ CALL: 100% OBRIGATÓRIA\n🎧 MIC: 100% OBRIGATÓRIO\n⚽ POSIÇÕES: TODAS DISPONÍVEIS\n🏆 NÍVEL: INTERMEDIÁRIO PRA CIMA\n🤝 RESPEITO: ESSENCIAL\n⏰ HORÁRIO: DISPONÍVEL\n```", inline=False)
-    embed.add_field(name="🎯 O QUE VAMOS AVALIAR EM VOCÊ", value="> ⚡ **PASSE:** PRECISÃO\n> 🎯 **FINALIZAÇÃO:** QUALIDADE\n> 🧠 **VISÃO DE JOGO:** INTELIGÊNCIA\n> 🗣️ **COMUNICAÇÃO:** FALAR NA CALL\n> 🤝 **TRABALHO EM EQUIPE:** COLETIVO\n> 🔥 **VONTADE:** GARRA!", inline=False)
-    embed.add_field(name="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", value="🔴⚫⚪ **TPS E-SPORTS - VENHA FAZER HISTÓRIA CONOSCO!** ⚪⚫🔴", inline=False)
-    embed.set_footer(text="⚪ TPS PENEIRA OFICIAL | NÃO PERCA ESSA CHANCE ÚNICA! ⚪")
-    await interaction.followup.send(content="# @everyone @here\n## 🌟⚪ PENEIRA ABERTA - TPS TE ESPERA! ⚪🌟", embed=embed)
+    embed.add_field(name="👤 NICK", value="```\n👑 Creigh_Tps1 👑\n```", inline=False)
+    embed.add_field(name="🔗 LINK DA PENEIRA", value=">>> `https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[⚪ CLIQUE AQUI ⚪](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
+    embed.add_field(name="📋 REQUISITOS", value=">>> ```\n🗣️ CALL: OBRIGATÓRIA\n🎧 MIC: OBRIGATÓRIO\n⚽ POSIÇÕES: TODAS\n🏆 NÍVEL: INTER+\n```", inline=False)
+    embed.set_footer(text="⚪ TCS PENEIRA OFICIAL ⚪")
+    await interaction.followup.send(content="# @everyone @here\n## 🌟⚪ PENEIRA ABERTA TCS! ⚪🌟", embed=embed)
 
 # 4 - TREINO - VERMELHO
 @bot.tree.command(name="treino", description="Treino gigante")
 async def treino(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
-        title="🔴💪 TREINO OBRIGATÓRIO TPS - COMPAREÇA AGORA! 💪🔴",
+        title="🔴💪 TREINO OBRIGATÓRIO TCS! 💪🔴",
         description="""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💪⚽ **ATENÇÃO TOTAL TIME TPS!** ⚽💪
+💪⚽ **ATENÇÃO TIME TCS!** ⚽💪
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔥🔥🔥 **TREINO OBRIGATÓRIO AGORA MESMO!** 🔥🔥🔥
-🚨 **PRESENÇA DE TODOS É OBRIGATÓRIA!** 🚨
-🏆 **RUMO AO TOPO, SEM DESCULPAS!** 🏆
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥🔥🔥 **TREINO OBRIGATÓRIO AGORA!** 🔥🔥🔥
         """,
-        color=0xFF0000  # VERMELHO
+        color=0xFF0000
     )
-    embed.add_field(name="👤 NICK DO TREINO", value="```\n🔴 Creigh_Tps1 - CAPITÃO 🔴\n```", inline=False)
-    embed.add_field(name="🔗 LINK DO TREINO", value=">>> **ENTRA AGORA NO TREINO:**\n`https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[🔴 CLIQUE AQUI PARA ENTRAR NO TREINO 🔴](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
-    embed.add_field(name="📋 INFORMAÇÕES DO TREINO DE HOJE", value=">>> ```\n✅ LINE: TODOS OBRIGATÓRIOS\n🧤 GK: TODOS OBRIGATÓRIOS\n🎙️ CALL: 100% OBRIGATÓRIA\n📝 PRESENÇA: SERÁ COBRADA\n⏰ HORÁRIO: AGORA MESMO\n💪 FOCO: TOTAL E ABSOLUTO\n```", inline=False)
-    embed.add_field(name="⚠️ AVISO MUITO IMPORTANTE", value="> 🚨 **QUEM NÃO COMPARECER SEM AVISAR VAI LEVAR PUNIÇÃO!**\n> 🚨 **TREINO É COISA SÉRIA!**\n> ✅ **SE NÃO PUDER IR, AVISE ANTES NO CHAT!**\n> 🔥 **VAMOS COM TUDO TIME!**", inline=False)
-    embed.add_field(name="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", value="🔴⚫⚪ **TPS E-SPORTS - TREINO DE CAMPEÃO!** ⚪⚫🔴", inline=False)
-    embed.set_footer(text="🔴 TPS TREINO OFICIAL | FOCO, FORÇA E FÉ! SEMPRE! 🔴")
-    await interaction.followup.send(content="# @everyone @here\n## 🔴💪 TREINO OBRIGATÓRIO AGORA! ENTRA AE! 💪🔴", embed=embed)
+    embed.add_field(name="👤 NICK", value="```\n🔴 Creigh_Tps1 🔴\n```", inline=False)
+    embed.add_field(name="🔗 LINK DO TREINO", value=">>> `https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server`\n\n[🔴 CLIQUE AQUI 🔴](https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server)", inline=False)
+    embed.add_field(name="📋 INFO", value=">>> ```\n✅ LINE: TODOS\n🧤 GK: TODOS\n🎙️ CALL: OBRIGATÓRIA\n📝 PRESENÇA: COBRADA\n```", inline=False)
+    embed.set_footer(text="🔴 TCS TREINO OFICIAL 🔴")
+    await interaction.followup.send(content="# @everyone @here\n## 🔴💪 TREINO TCS AGORA! 💪🔴", embed=embed)
 
 bot.run(os.getenv("DISCORD_TOKEN"))
