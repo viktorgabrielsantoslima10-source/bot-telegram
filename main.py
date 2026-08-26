@@ -14,32 +14,32 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-# 1 - AMISTOSO SEM NICK E SEM LINK (SÓ CONVITE)
-@bot.tree.command(name="amistoso", description="Procurando amistoso")
+# 1 - AMISTOSO = CHAMAR SEU TIME (SEM NICK E SEM LINK)
+@bot.tree.command(name="amistoso", description="Chamar nosso time pro amistoso")
 async def amistoso(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
-        title="⚽🔍 AMISTOSO AGORA? 🏴",
-        description="🔥 **ESTAMOS PROCURANDO AMISTOSO!** 🔥\n\n📢 **ALGUÉM QUER JOGAR CONTRA NÓS?**",
+        title="⚽ AMISTOSO AGORA ??? 🏴",
+        description="🔥 **BORA TIME ??? ALGUÉM QUER JOGAR AMISTOSO AGORA ???** 🔥\n\n📢 Reage aqui e entra na call!",
         color=0xFF0000
     )
-    embed.add_field(name="📊 NOSSO TIME", value="> ✅ **LINE:** PRONTA\n> 🧤 **GK:** PRONTO\n> ⏰ **HORÁRIO:** AGORA\n> 📶 **PING:** BOM\n> 🎙️ **CALL:** ON", inline=False)
-    embed.add_field(name="📩 COMO MARCAR", value="> 💬 Responde aqui no chat\n> 📩 Chama na DM\n> 🎙️ Entra na call e bora!", inline=False)
-    embed.set_footer(text="🏆 TPS E-SPORTS - Estamos ON para jogo!")
-    await interaction.followup.send(content="@everyone", embed=embed)
+    embed.add_field(name="📋 SITUAÇÃO", value="> ✅ **LINE:** OK\n> 🧤 **GK:** OK\n> ⏰ **HORÁRIO:** AGORA\n> 🎙️ **CALL:** ENTRA AE", inline=False)
+    embed.add_field(name="👇 O QUE FAZER", value="> 1️⃣ Entra na call\n> 2️⃣ Confirma presença\n> 3️⃣ Bora procurar jogo!", inline=False)
+    embed.set_footer(text="🏆 TPS E-SPORTS | Chamando o time!")
+    await interaction.followup.send(content="@everyone @here", embed=embed)
 
-# 2 - AMISTOSO HOST COM NICK E LINK GRANDÃO
-@bot.tree.command(name="amistosohost", description="Amistoso na nossa casa")
+# 2 - AMISTOSOHOST = CHAMAR OUTRO TIME PRO SEU HOST (COM NICK E LINK)
+@bot.tree.command(name="amistosohost", description="Chamar time pra nossa casa")
 async def amistosohost(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
         title="🏠⚽ AMISTOSO NA NOSSA CASA! 🏴🔥",
-        description="🔥 **VENHAM JOGAR AQUI NO NOSSO HOST!** 🔥",
+        description="🔥 **QUER JOGAR CONTRA O TPS? VEM PRA NOSSA CASA!** 🔥",
         color=0x00FF00
     )
     embed.add_field(name="👤 NICK DO HOST", value="`Creigh_Tps1`", inline=False)
     embed.add_field(name="🔗 LINK DO SERVER", value="https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server", inline=False)
-    embed.add_field(name="📋 INFORMAÇÕES", value="> ✅ **LINE:** COMPLETA\n> 🧤 **GK:** PRONTO\n> 🗺️ **MAPA:** PADRÃO\n> ⚙️ **MODO:** 11x11\n> 🎙️ **CALL:** OBRIGATÓRIA", inline=False)
+    embed.add_field(name="📋 INFO DA PARTIDA", value="> ✅ **LINE:** COMPLETA\n> 🧤 **GK:** PRONTO\n> 🗺️ **MAPA:** PADRÃO\n> ⚙️ **MODO:** 11x11\n> 🎙️ **CALL:** ON", inline=False)
     embed.set_footer(text="🏆 TPS E-SPORTS | Host: Creigh_Tps1")
     await interaction.followup.send(content="@everyone @here", embed=embed)
 
@@ -54,7 +54,6 @@ async def peneira(interaction: discord.Interaction):
     )
     embed.add_field(name="👤 NICK", value="`Creigh_Tps1`", inline=True)
     embed.add_field(name="🔗 LINK", value="https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server", inline=False)
-    embed.add_field(name="📋 REQUISITOS", value="> 🗣️ CALL OBRIGATÓRIA\n> 🎧 MIC OBRIGATÓRIO\n> ⚽ TODAS POSIÇÕES", inline=False)
     await interaction.followup.send(content="@everyone @here", embed=embed)
 
 # 4 - TREINO
@@ -62,13 +61,12 @@ async def peneira(interaction: discord.Interaction):
 async def treino(interaction: discord.Interaction):
     await interaction.response.defer()
     embed = discord.Embed(
-        title="💪⚽ TREINO TPS - COMPAREÇA! ⚽💪",
-        description="🔥 **TREINO OBRIGATÓRIO AGORA!** 🔥",
+        title="💪⚽ TREINO TPS - BORA TIME! ⚽💪",
+        description="🔥 **TREINO AGORA! ENTRA AE TIME!** 🔥",
         color=0x0099FF
     )
     embed.add_field(name="👤 NICK", value="`Creigh_Tps1`", inline=True)
     embed.add_field(name="🔗 LINK", value="https://www.roblox.com/share?code=1e38b417aac9264cb206a7e46b5d657d&type=Server", inline=False)
-    embed.add_field(name="📋 INFO", value="> ✅ LINE: TODOS\n> 🧤 GK: TODOS\n> 🎙️ CALL OBRIGATÓRIA", inline=False)
     await interaction.followup.send(content="@everyone @here", embed=embed)
 
 bot.run(os.getenv("DISCORD_TOKEN"))
